@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Contato - Barbearia Alura</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">         
+    </head>
+    <body>
+        <header>
+            <div class="caixa">                
+            <h1><img src="logo-branco.png" alt="Logo da Barbearia Alura"></h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contatos</a></li>
+                </ul>
+            </nav>
+            
+            </div>    
+        </header>
+
+        <main class="formcontato">
+            <form>
+                <label for="nomecompleto">Nome completo</label>
+                <input type="text" id="nomecompleto" class="input-padrao" required placeholder="nome completo">
+
+                <label for="E-mail">E-mail</label>
+                <input type="email" id="E-mail" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="Telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem"></textarea required>
+                
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>                    
+                    <label for="radio-email"><input type="radio" name="contato" value="E-mail" id="radio-email">
+                        E-mail</label>
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="telefone" id="radio-telefone" checked>Whatsapp</label>
+                    
+                </fieldset>
+
+                <fieldset>
+                        
+                    <legend> Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                    
+                </fieldset>
+
+
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
+
+                <input type="submit" value="Enviar formulário!" class="enviar">                
+            </form>
+
+            <table>
+                <tr>
+                    <thead>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </thead>
+                </tr>
+                    <tbody>
+                        <tr>
+                        <td>Segunda</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    </tbody>
+    
+            </table>
+
+        </main>
+
+        <footer>
+            <img src="cazesemfundo.png" alt="Logo da Barbearia Cortes do Casimiro">
+            <p class="copyright">&copy; Copyright Cortes Cazé - 2022</p>
+        </footer>
+    
+        </html> 
+
+        
